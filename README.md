@@ -1,16 +1,22 @@
 # word_definition
 
-A new Flutter application.
+The String Processing Project.
 
-## Getting Started
+## Details
 
-This project is a starting point for a Flutter application.
+If you click or touch a word it will show you the definition and play the audio clip.  Not every
+word has a definition, common words like "the" and "that" are purposefully excluded.  As such,
+they are not clickable.  The could be easily be included by adding an entry in the json file.
 
-A few resources to get you started if this is your first Flutter project:
+This was tested in Chrome and and Android emulator.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Next technical steps
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+There are a number of improvements needed for this to become a production ready product:
+
+* Move from a JSON file to a server side database.  When a story is loaded, generate the dictionary then.
+* Begin using parts of speech and definition entry tags.  A story needs to be parsed to match each word to the appropriate definition, such as which "chair" is being used.
+* To generate parsings of a story, I would first try to use Mechanical Turk.  I would send the context,  word, and list of definitions to the turk and ask them to select the appropriate definition.
+* The age appropriate definitions should be used.  Someone reading at a college level would need different definitions than someone reading at an early reader level.
+* Move to a multimedia format for the definitions.  Instead of defining "dinosaur", show one.  Maybe an animation of one.
+* Support multi-word definitions, such as "Department Chair"

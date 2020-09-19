@@ -1,0 +1,195 @@
+[
+  {
+    "name": "researchers",
+    "data": [
+      {
+        "pos": "n",
+        "entry": 1,
+        "title": "Researcher",
+        "grade_level": ["k", "1"],
+        "definition": "A researcher is someone who carries out academic or scientific research.",
+        "audio": "https://drive.google.com/u/0/uc?id=1SIeiLW0uTYWueEsjJhV312WZx24nXE4G&export=download"
+      }
+    ]
+  },
+  {
+    "name": "recall",
+    "data": [
+      {
+        "pos": "v",
+        "entry": 1,
+        "title": "Recall",
+        "definition": "To remember something.",
+        "audio": "https://drive.google.com/u/0/uc?id=1LmTa58kIXgdt3zA9BybKTyB7p395yZgE&export=download"
+      }
+    ]
+  },
+  {
+    "name": "participants",
+    "data": [
+      {
+        "pos": "n",
+        "entry": 1,
+        "title": "Participant",
+        "definition": "Someone who takes part in an activity.",
+        "audio": "https://drive.google.com/u/0/uc?id=1bTBZyBaUeD0pHA9YygZfBy7cCu7nOs95&export=download"
+      }
+    ]
+  },
+  {
+    "name": "aloud",
+    "data": [
+      {
+        "pos": "v",
+        "entry": 1,
+        "title": "Aloud",
+        "definition": "Something that is able to be heard.",
+        "audio": "https://drive.google.com/u/0/uc?id=1vpZ2etxD0WaWx1T6Jj5bymPxGYVZcLGY&export=download"
+      }
+    ]
+  },
+  {
+    "name": "psychology",
+    "data": [
+      {
+        "pos": "n",
+        "entry": 1,
+        "title": "Psychology",
+        "definition": "The study of the mind.",
+        "audio": "https://drive.google.com/u/0/uc?id=1wvka5RDdp4cRcKSI218mGob2VKROowfD&export=download"
+      }
+    ]
+  },
+  {
+    "name": "study",
+    "data": [
+      {
+        "pos": "n",
+        "entry": 1,
+        "title": "Study",
+        "definition": "A careful investigation of something.",
+        "audio": "https://drive.google.com/u/0/uc?id=1eycf9iiYCf16_r6QRsrlutQ5NH6LQd1U&export=download"
+      }
+    ]
+  },
+  {
+    "name": "confirms",
+    "data": [
+      {
+        "pos": "v",
+        "entry": 1,
+        "title": "Confirm",
+        "definition": "To show that something is true.",
+        "audio": "https://drive.google.com/u/0/uc?id=1eNJw98B0kHPaPvH488aMcv-42dVgTR_n&export=download"
+      }
+    ]
+  },
+  {
+    "name": "learning",
+    "data": [
+      {
+        "pos": "v",
+        "entry": 1,
+        "title": "Learning",
+        "definition": "To understand something, to gain knowledge.",
+        "audio": "https://drive.google.com/u/0/uc?id=1C5MMu5ce1qqom7X6E1VaOFH2DZgkLPoi&export=download"
+      }
+    ]
+  },
+  {
+    "name": "memory",
+    "data": [
+      {
+        "pos": "n",
+        "entry": 1,
+        "title": "Memory",
+        "definition": "Your ability to remember things.",
+        "audio": "https://drive.google.com/u/0/uc?id=1KJsSohNQ_1Vwp_erSVfBtEROgvW3Tcn7&export=download"
+      }
+    ]
+  },
+  {
+    "name": "benefit",
+    "data": [
+      {
+        "pos": "n",
+        "entry": 1,
+        "title": "Benefit",
+        "definition": "To gain something.",
+        "audio": "https://drive.google.com/u/0/uc?id=14qnLZcytvzyHjiywCYCcchBOQJQIfpky&export=download"
+      }
+    ]
+  },
+  {
+    "name": "active",
+    "data": [
+      {
+        "pos": "n",
+        "entry": 1,
+        "title": "Active",
+        "definition": "To be doing something.",
+        "audio": "https://drive.google.com/u/0/uc?id=1-f1K3rUexeEH-24JVbAJdnQ5tTI9XrFP&export=download"
+      }
+    ]
+  },
+  {
+    "name": "involvement",
+    "data": [
+      {
+        "pos": "n",
+        "entry": 1,
+        "title": "Involvement",
+        "definition": "To take part in something.",
+        "audio": "https://drive.google.com/u/0/uc?id=1NrOLYabIgN0E7-K1oOAS6rti-Ym6Q_EN&export=download"
+      }
+    ]
+  },
+  {
+    "name": "professor",
+    "data": [
+      {
+        "pos": "n",
+        "entry": 1,
+        "title": "Professor",
+        "definition": "A teacher of a college class.",
+        "audio": "https://drive.google.com/u/0/uc?id=1Ahi9J_N4hv3F4iXXOn43WSgETEPypRIX&export=download"
+      }
+    ]
+  },
+  {
+    "name": "chair",
+    "data": [
+      {
+        "pos": "n",
+        "entry": 1,
+        "title": "Chair",
+        "definition": "The position in charge of an area of a school.",
+        "audio": "https://drive.google.com/u/0/uc?id=19hGwVVthNIES-ubOFutXDkxymZg-6Mu5&export=download"
+      }
+    ]
+  },
+  {
+    "name": "department",
+    "data": [
+      {
+        "pos": "n",
+        "entry": 1,
+        "title": "Department",
+        "definition": "A section of a college devoted to teaching a certain area.",
+        "audio": "https://drive.google.com/u/0/uc?id=1ZrDiChTB9s_2ifIUvZbGT7ZhqzcL27ei&export=download"
+      }
+    ]
+  },
+  {
+    "name": "university",
+    "data": [
+      {
+        "pos": "n",
+        "entry": 1,
+        "title": "University",
+        "definition": "A place to learn more after high school, where you can complete degrees.",
+        "audio": "https://drive.google.com/u/0/uc?id=1RyACxqvxS-Z1hvbTTamhApmyJG13WO8o&export=download"
+      }
+    ]
+  }
+]
