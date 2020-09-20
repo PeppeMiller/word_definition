@@ -2,11 +2,22 @@
 
 import 'package:flutter/material.dart';
 import 'word_definition_app.dart';
+import 'package:provider/provider.dart';
+import 'model/student_dictionary.dart';
 
-// TODO: Setup for unit testing.
+// TODO: Document better.
+// TODO: Add image background.
+// TODO: Improve font.
+// TODO: Improve dialog box.
 
 void main() {
   runApp(
-    WordDefinitionApp()
+    ChangeNotifierProvider(create: (context) {
+      final dictionary = StudentDictionary();
+      dictionary.loadDictionary(context);
+      return dictionary;
+    },
+    child: WordDefinitionApp(),
+    )
   );
 }
