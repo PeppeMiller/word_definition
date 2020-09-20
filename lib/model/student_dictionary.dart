@@ -3,25 +3,7 @@
 import 'dart:convert';
 import 'dart:core';
 import 'package:flutter/material.dart';
-
-/// A single entry for a word definition.
-class WordDefinition {
-  final String partOfSpeech;
-  final int entryIndex;
-  final String title;
-  final String definition;
-  final String audioUrl;
-
-  WordDefinition(this.partOfSpeech, this.entryIndex, this.title,
-      this.definition, this.audioUrl);
-
-  WordDefinition.fromJson(Map<String, dynamic> json)
-    : partOfSpeech = json['pos'],
-      entryIndex = json['entry'],
-      title = json['title'],
-      definition = json['definition'],
-      audioUrl = json['audio'];
-}
+import 'package:word_definition/model/word_definition.dart';
 
 /// Utility class to lookup word definition data.
 class StudentDictionary extends ChangeNotifier {
@@ -29,6 +11,7 @@ class StudentDictionary extends ChangeNotifier {
   final _dictionary = {};
   var _built = false;
 
+  // Load the dictionary from assets
   void loadDictionary(context) async {
     DefaultAssetBundle.of(context).loadString('./assets/dictionary.json')
     .then((dictionaryText) {
@@ -44,6 +27,7 @@ class StudentDictionary extends ChangeNotifier {
 
   }
 
+  /// Determine if a word exists in our dictionary.
   bool wordIsInDictionary(String word) {
     // Ensure we're done loading.
     if (!_built) {
@@ -53,6 +37,8 @@ class StudentDictionary extends ChangeNotifier {
     return _dictionary.containsKey(word.toLowerCase());
   }
 
+  /// Gets the definition object for a word, returns null if the word does
+  /// not exist in our dictionary.
   WordDefinition getWord(String word) {
     if (wordIsInDictionary(word)) {
       return _dictionary[word.toLowerCase()];

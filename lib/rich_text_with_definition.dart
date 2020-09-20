@@ -31,7 +31,8 @@ class _RichTextWithDefinitionState extends State<RichTextWithDefinition> {
       final storyText =
           await DefaultAssetBundle.of(context).loadString('./assets/story.txt');
 
-      // Tokenize our story
+      // Tokenize our story so we can check every token to see if
+      // we need to show a definition for that word.
       final tokenizer = Tokenizer({',', ' ', '\r\n', '“', '”', '.'});
       final tokens = tokenizer.tokenize(storyText).map((e) => e.value);
 
@@ -46,6 +47,7 @@ class _RichTextWithDefinitionState extends State<RichTextWithDefinition> {
               builder: (context, dictionary, child) => _buildContent(context, snapshot.data, dictionary),
             );
           } else {
+            // Loading screen
             return Center(
               child: CircularProgressIndicator(),
             );
@@ -53,10 +55,13 @@ class _RichTextWithDefinitionState extends State<RichTextWithDefinition> {
         });
   }
 
+  // Build the individual word displays
   List<InlineSpan> _buildRichText(context, tokens, StudentDictionary dictionary) {
     final textSpans = List<InlineSpan>();
     final style = TextStyle(color: Colors.black);
 
+    // Iterate over all of the tokens.  Determine if we need
+    // to show a dictionary definition for it and setup the word appropriately.
     for (final token in tokens) {
       if (dictionary.wordIsInDictionary(token)) {
         textSpans.add(TextSpan(
@@ -80,6 +85,7 @@ class _RichTextWithDefinitionState extends State<RichTextWithDefinition> {
     return textSpans;
   }
 
+  // Create the text display for the story.
   Widget _buildContent(context, tokens, StudentDictionary dictionary) {
     return Container(
       padding: EdgeInsets.all(10.0),
